@@ -1,0 +1,60 @@
+<!-- Michelle Miranda - 22112023 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Word</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="main-container" >
+        <div class="container1">
+            <h1>Welcome to Guess the Word! Let the guessing game commence!</h1>
+        </div>
+        <div class="container2">
+            <div class="welcome-screen">
+                <h2>Choose Difficulty Level</h3>
+                <div class="button-wrapper">
+                    <button class="easy" onclick="selectMode('easy')">Easy</button>
+                    <button class="hard" onclick="selectMode('hard')">Hard</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="game" >
+        <div class="game-wrapper">
+        <h1 id = "game-title">Guess the word</h1>
+        <div id="displayWord">
+            
+        </div>
+        <div id="wrongLetters"></div>
+        <div id="remainingGuesses"></div>
+
+        <div class="guess">
+            <div>
+                <p>Guess one letter</p>
+                <input type="text" name="Guess one letter"  id="letter-input" placeholder="Enter a letter" onkeydown="return /[a-zA-Z]/i.test(event.key)" maxlength="1">
+            </div>
+            <div class="game-btns">
+            <button id="guess-btn" onclick="guessLetter()">Guess</button>
+            <button id="hint-btn" onclick="displayHint()">Hint</button>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+
+    <div id="win-screen">
+            <h1 id="win-message"></h1>
+            <button id="play-again" >Play Again</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+/* Michelle Miranda - 22112023 */
+
+body {
+    margin: 20vh;
+    background-color: #AAD7D9;
+    font-size: large;
+    font-family: monospace;
+}
+
+.container1 {
+    background-color: #FBF9F1;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.container2 {
+    background-color: #FBF9F1;
+    display: grid;
+    border-radius: 10px;
+
+
+}
+
+#main-container {
+    display: grid;
+}
+
+.welcome-screen {
+
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.button-wrapper {
+    display: grid;
+
+}
+
+button {
+    margin: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+    font-size: 1.5em;
+    cursor: pointer;
+
+}
+
+.game-btns {
+    display: grid;
+    padding-top: 2vh;
+
+}
+
+.game-btns button {
+    padding: 0px;
+    font-size: 1.2em;
+    width: 100%;
+    margin: 0;
+
+
+}
+
+#remainingGuesses,
+#wrongLetters {
+    margin-top: 2vh;
+}
+
+#guess-btn:hover {
+    background-color: #FDFFAB;
+}
+
+#hint-btn {
+    margin-top: 10px;
+}
+
+#hint-btn:hover {
+    background-color: #FFCF96;
+}
+
+.easy:hover {
+    background-color: #9ADE7B;
+}
+
+.hard:hover {
+    background-color: #D24545;
+}
+
+.game-wrapper {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    width: 100%;
+
+}
+
+#game {
+    padding: 40px 20px 50px 0px;
+
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF9F1;
+
+}
+
+.guess input {
+    font-family: monospace;
+    border-radius: 5px;
+
+    height: 3vh;
+    width: 98%;
+}
+
+#win-screen {
+    padding: 10vh 30vh 10vh 30vh;
+    margin: 0 20vh 0 20vh;
+    border-radius: 10px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #FBF9F1;
+    text-align: center;
+
+}
+
+#play-again:hover {
+    background-color: blanchedalmond;
+}
+
+#displayWord {
+    text-align: center;
+}
+
+/* Media Query for Phones */
+@media only screen and (max-width: 600px) {
+    body {
+        margin: 4vh;
+        margin-top: 20vh;
+
+    }
+
+    #win-screen {
+        padding: 5vh;
+        margin: 0vh;
+        font-size: medium;
+    }
+}
+
+/* Media Query for Tablets */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body {
+        margin: 10vh;
+        margin-top: 20vh;
+        font-size: large;
+    }
+
+    #win-screen {
+        padding: 3vh;
+        margin: 0vh;
+        font-weight: bold;
+    }
+}
